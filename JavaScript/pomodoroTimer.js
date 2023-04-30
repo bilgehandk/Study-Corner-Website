@@ -49,15 +49,10 @@ function restart() {
     workMinutes = workTime; // Reset the work minutes to the original value
     breakCount = 0; // Reset the break count to 0
 
-    let timerFunction = () => {
-        workTitle.classList.add('active'); // Set the work title to active
-        breakTitle.classList.remove('active'); // Set the break title to inactive
-        document.getElementById('editableMinutes').value = workMinutes;
-        document.getElementById('minutes').innerHTML = workMinutes; // Update the minutes display with the new work minutes
-        document.getElementById('seconds').innerHTML = seconds; // Update the seconds display with the new seconds
-    }
-   
-    myvar = setTimeout(timerFunction, 1000);
+    workTitle.classList.add('active'); // Set the work title to active
+    breakTitle.classList.remove('active'); // Set the break title to inactive
+    document.getElementById('minutes').innerHTML = workMinutes; // Update the minutes display with the new work minutes
+    document.getElementById('seconds').innerHTML = seconds; // Update the seconds display with the new seconds
 }
 
   

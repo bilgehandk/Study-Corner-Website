@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#addBtn, #updateBtn {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.week {
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+h1, h2 {
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

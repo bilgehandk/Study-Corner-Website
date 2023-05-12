@@ -10,8 +10,8 @@ nav{
     margin: 0px auto 0px auto;
     background: linear-gradient(to right,#19A7CE,#146C94,#394867);
     background-size:400% 400%;
-    animation: background1 10s ease-in-out infinite
-    
+    animation: background1 10s ease-in-out infinite;
+
     
 }
 a{

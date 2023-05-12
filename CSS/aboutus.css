@@ -15,7 +15,7 @@
     margin-top: 50px;
 }
 header{
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Foldit', cursive;
     font-family: 'Press Start 2P', cursive;
     color: white;
@@ -26,23 +26,27 @@ header{
     color:#394867;
 }
 #firstcontainer{
-    width: 460px;
+    width: 400px;
     background-color: #394867;
     border: solid #19A7CE ;
+    border-radius: 10%;
 }
 img{
     width: 150px;
     margin-top: 35px;
     border:solid whitesmoke ;
     border-radius: 50%;
+    
 }
 #secondcontainer{
-    width: 460px;
+    width: 400px;
     background-color: lightgrey;
     border: solid #394867 ;
+    border-radius: 10%;
 }
 #thirdcontainer{
-    width: 460px;
+    width: 400px;
     background-color: #394867;
     border: solid #19A7CE ;
+    border-radius: 10%;
 }

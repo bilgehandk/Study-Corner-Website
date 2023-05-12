@@ -8,7 +8,7 @@
   #batman {
     width: 50px;
     height: 50px;
-    background-image: url(../images/batman-running.gif);
+    background-image: url(../images/output-batman.gif);
     background-size: 50px 50px;
     position: relative;
     top: 150px;
@@ -47,7 +47,7 @@
     top: 120px;
     left: 580px;
   
-    background-image: url("../images/penguin-pixel.gif");
+    background-image: url("../images/output-penguin.gif");
     background-size: 30px 30px;
   
     animation: block 1.5s infinite linear;

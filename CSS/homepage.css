@@ -26,7 +26,7 @@ ul{
 }
 li:hover{
     background-color: #394867;
-    font-size: 150%;
+    font-size: 120%;
     font-style: italic;
 }
 @keyframes background1 {

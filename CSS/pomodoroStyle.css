@@ -2,10 +2,10 @@
     font-size: 62.5%;
 
     --color-primary: black;
-    --color-secondory: rgb(250, 140, 158);
+    --color-secondory: #146C94;
     --color-font: white;
 
-    --color-shadow: rgb(151, 79, 151);
+    --color-shadow: #394867;
 }
 
 *{

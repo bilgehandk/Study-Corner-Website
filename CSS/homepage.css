@@ -1,44 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
+#ftco-navbar{
+    background-color: blue;
 }
-nav{
-    font-family: 'Foldit', cursive;
-    font-family: 'Press Start 2P', cursive;
-    width: auto;
-    height: 70px;
-    margin: 0px auto 0px auto;
-    background: linear-gradient(to right,#19A7CE,#146C94,#394867);
-    background-size:400% 400%;
-    animation: background1 10s ease-in-out infinite;
 
-    
-}
-a{
-    color: #F6F1F1;
-    list-style: none;
-}
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 35px;
-}
-li:hover{
-    background-color: #394867;
-    font-size: 120%;
-    font-style: italic;
-}
-@keyframes background1 {
-    
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-
+.ftco-navbar-light{
+    background-color: blue;
+    color: blue;
 }

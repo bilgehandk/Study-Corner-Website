@@ -34,7 +34,12 @@ let isAlive = setInterval(function () {
   if (samLeft < 50 && samLeft > 0 && batmanTop >= 140) {
     // collision
     alert("Game Over!");
+    
     reset_animation();
+  }
+  else
+  {
+    point += 10; 
   }
 }, 10);
 

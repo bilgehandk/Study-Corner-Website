@@ -1,8 +1,12 @@
-#ftco-navbar{
-    background-color: blue;
+ #boot-icon{
+    margin: 10px;
+ }
+
+.navbar-brand{
+    font-size: 24px;
 }
 
-.ftco-navbar-light{
-    background-color: blue;
-    color: blue;
-}
+ .navbar-brand #brand{
+    font-size: 24px;
+    color: black;
+ }

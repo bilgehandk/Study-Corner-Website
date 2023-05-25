@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="./CSS/cgpa.css">
+</head>
+<body>
+  <h1>CGPA Calculator</h1>
+  <div class="container">
+    <label for="grade">Grade:</label>
+    <input type="number" step="0.1" id="grade" placeholder="Enter your grade" />
+
+    <label for="credit">Credit Hours:</label>
+    <select id="credit">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <!--For different credit options, add more -->
+    </select>
+
+    <button onclick="calculateCGPA()">Add Course</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="./JavaScript/calculateCGPA.js"></script>
+</body>
+</html>

@@ -10,3 +10,8 @@
     font-size: 24px;
     color: black;
  }
+
+ .container{
+   margin: auto;
+   padding: 10px;
+ }

@@ -1,12 +1,15 @@
 :root{
     font-size: 62.5%;
 
+    
     --color-primary: black;
     --color-secondory: #146C94;
     --color-font: white;
-
+    
     --color-shadow: #394867;
 }
+
+
 
 *{
     margin: 0;

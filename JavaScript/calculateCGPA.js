@@ -5,6 +5,7 @@ function calculateCGPA() {
   const gradeInput = document.getElementById('grade');
   const creditInput = document.getElementById('credit');
   const resultDiv = document.getElementById('result');
+  const courseListDiv = document.getElementById('courseList');
 
   const grade = parseFloat(gradeInput.value);
   const credit = parseInt(creditInput.value);
@@ -22,4 +23,18 @@ function calculateCGPA() {
 
   const cgpa = totalPoints / totalCredits;
   resultDiv.textContent = 'Your CGPA: ' + cgpa.toFixed(2);
+
+  // Create a new course entry
+  const courseEntry = document.createElement('div');
+  courseEntry.className = 'course-entry';
+
+  const gradeSpan = document.createElement('span');
+  gradeSpan.textContent = ' Grade: ' + grade.toFixed(1);
+  courseEntry.appendChild(gradeSpan);
+
+  const creditSpan = document.createElement('span');
+  creditSpan.textContent = ' Credit Hours: ' + credit;
+  courseEntry.appendChild(creditSpan);
+
+  courseListDiv.appendChild(courseEntry);
 }

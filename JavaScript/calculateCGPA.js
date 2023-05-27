@@ -10,7 +10,7 @@ function calculateCGPA() {
   const grade = parseFloat(gradeInput.value);
   const credit = parseInt(creditInput.value);
 
-  if (isNaN(grade) || isNaN(credit)) {
+  if (isNaN(grade) || grade < 0 || grade > 4 || isNaN(credit)) {
     resultDiv.textContent = 'Please enter valid grade and credit hours.';
     return;
   }

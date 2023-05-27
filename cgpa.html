@@ -7,8 +7,24 @@
 <body>
   <h1>CGPA Calculator</h1>
   <div class="container">
+    <label for="course">Course:</label>
+    <input type="text" id="course" placeholder="Enter the course name">
+
     <label for="grade">Grade:</label>
-    <input type="number" step="0.1" id="grade" placeholder="Enter your grade" />
+    <select id="grade">
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="B-">B-</option>
+      <option value="C+">C+</option>
+      <option value="C">C</option>
+      <option value="C-">C-</option>
+      <option value="D+">D+</option>
+      <option value="D">D</option>
+      <option value="F">F</option>
+    </select>
 
     <label for="credit">Credit Hours:</label>
     <select id="credit">
@@ -16,16 +32,13 @@
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
-      
     </select>
 
     <button onclick="calculateCGPA()">Add Course</button>
 
     <div class="result" id="result"></div>
 
-    <div id="courseList">
-      
-    </div>
+    <div id="courseList"></div>
   </div>
 
   <script src="./JavaScript/calculateCGPA.js"></script>

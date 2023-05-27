@@ -15,3 +15,43 @@
    margin: auto;
    padding: 10px;
  }
+
+ .fade-in {
+   animation: fade-in 1s ease-in;
+ }
+ 
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+     transform: translateY(20px);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ @media (max-width: 576px) {
+   /* Navbar */
+   .navbar-brand {
+     font-size: 24px;
+   }
+   .navbar-toggler {
+     margin-right: 5px;
+   }
+
+   /* Carousel */
+   .carousel-item img {
+     height: 200px;
+   }
+
+   /* Text field */
+   .form-group {
+     margin-bottom: 10px;
+   }
+
+   /* Footer */
+   footer {
+     padding: 10px 0;
+   }
+ }

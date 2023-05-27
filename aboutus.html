@@ -13,6 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/aboutus.css">
 
+    <script>
+        function initMap() {
+            // Specify the coordinates for the center of the map
+            const mapCenter = { lat: 40.712776, lng: -74.005974 };
+    
+            // Create a new map instance
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: mapCenter,
+                zoom: 12,
+            });
+    
+            // Add a marker to the map
+            const marker = new google.maps.Marker({
+                position: mapCenter,
+                map: map,
+                title: "Our Location",
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    
 </head>
 <body>
     <nav>
@@ -52,5 +73,19 @@
             <img src="images/emirhankaya.png" >
         </div>
     </div>
+
+    <div id="contact-section">
+        <h2>Contact Us</h2>
+        <div id="map"></div>
+        <div id="contact-info">
+            <h3>Address:</h3>
+            <p>123 Street, City, Country</p>
+            <h3>Email:</h3>
+            <p>info@example.com</p>
+            <h3>Phone:</h3>
+            <p>+1 123-456-7890</p>
+        </div>
+    </div>
+
 </body>
 </html>

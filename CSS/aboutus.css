@@ -90,3 +90,16 @@ img{
     font-size: 24px; 
     margin: 0 5px; 
   }
+
+#firstcontainer img,
+#secondcontainer img,
+#thirdcontainer img {
+  transition: transform 0.4s ease;
+}
+
+#firstcontainer img:hover,
+#secondcontainer img:hover,
+#thirdcontainer img:hover {
+  transform: scale(1.03);
+
+}

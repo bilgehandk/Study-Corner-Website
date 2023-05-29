@@ -86,3 +86,7 @@ img{
 #contact-info p.phone {
     color: #28a745;
 }
+.social-icons i {
+    font-size: 24px; 
+    margin: 0 5px; 
+  }

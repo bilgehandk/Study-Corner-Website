@@ -55,6 +55,7 @@ body {
   .result {
     margin-top: 20px;
     font-weight: bold;
+
   }
   body {
     
@@ -62,5 +63,5 @@ body {
     background-repeat: repeat-y;
     background-size: 100% 100%;
     background-position: center;
-    
+    color: white;
   }

@@ -39,11 +39,16 @@ h1{
 }
 
 
-/*--- Section --- */
+
 section{
     display: flex;
     align-items: center;
     height: 100%;
+    background-image: url("../images/backgroundimage.png");
+    
+    background-size: 100% 100%;
+    background-position: center;
+    
 }
 
 .container{
@@ -142,11 +147,24 @@ section{
 .controls #reset{
     display: none;
 }
-body {
-    
-    background-image: url("../images/backgroundimage.png");
-    
-    background-size: 100% 100%;
-    background-position: center;
-    
+.navbar-nav .nav-item {
+    margin: 0 5px;
   }
+  
+.nav-link {
+    font-size: 1.6rem;
+  }
+  
+@media (max-width: 992px) {
+    .navbar-nav .nav-item {
+      margin: 10px 0;
+    }
+}
+#work{
+    font-size: 25px;
+    font-weight: bold;
+}
+#break{
+    font-size: 25px;
+    font-weight: bold;
+}

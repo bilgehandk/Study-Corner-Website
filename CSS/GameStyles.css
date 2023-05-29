@@ -9,7 +9,8 @@
   width: 600px;
   height: 200px;
   border: 5px solid black;
-  margin: auto;
+  margin:auto ;
+  background-color: whitesmoke;
 }
 
   #batman {
@@ -68,4 +69,34 @@
     100% {
       left: -20px;
     }
+  }
+  #scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E528E;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px auto;
+  }
+  
+  #scoreboard h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  #scoreboard #score {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+ 
+  body {
+    
+    background-image: url("../images/tvshow.jpg" );
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    
   }

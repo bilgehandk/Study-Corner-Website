@@ -1,6 +1,21 @@
 const batman = document.getElementById("batman");
 const sam = document.getElementById("sam");
+let score = 0;
+const scoreElement = document.getElementById("score");
 
+function updateScore() {
+  score += 1;
+  scoreElement.textContent = score;
+}
+
+// Oyun döngüsünde, skoru güncelleyen yerde aşağıdaki fonksiyonu çağırabilirsiniz:
+// updateScore();
+
+// Skoru sıfırlamak için kullanabileceğin bir fonksiyon da aşağıdaki gibi olabilir:
+function resetScore() {
+  score = 0;
+  scoreElement.textContent = score;
+}
 function jump() {
   if (batman.classList != "jump") {
     batman.classList.add("jump");
@@ -26,20 +41,16 @@ let isAlive = setInterval(function () {
   let batmanTop = parseInt(window.getComputedStyle(batman).getPropertyValue("top"));
 
   // get current cactus X position
-  let samLeft = parseInt(
-    window.getComputedStyle(sam).getPropertyValue("left")
-  );
+  let samLeft = parseInt(window.getComputedStyle(sam).getPropertyValue("left"));
 
   // detect collision
   if (samLeft < 50 && samLeft > 0 && batmanTop >= 140) {
     // collision
     alert("Game Over!");
-    
     reset_animation();
-  }
-  else
-  {
-    point += 10; 
+    resetScore(); // Skoru sıfırla
+  } else {
+    updateScore(); // Skoru güncelle
   }
 }, 10);
 

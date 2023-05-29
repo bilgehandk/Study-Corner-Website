@@ -5,6 +5,7 @@ const datePicker = document.getElementById('datePicker');
 const updateBtn = document.getElementById('updateBtn');
 const weekHeading = document.getElementById('weekHeading');
 const mainTable = document.getElementsByClassName('maintable');
+const li = document.createElement('li');
 
 addBtn.addEventListener('click', () => {
     
@@ -28,6 +29,10 @@ addBtn.addEventListener('click', () => {
 
 updateBtn.addEventListener('click', () => {
     const date = new Date(datePicker.value);
+    if (isNaN(date)) {
+        alert('Please select a valid date!');
+        return;
+    }
     const options = { weekday: 'long', month: 'long', day: 'numeric' };
     const weekDiv = document.createElement('div'); // create new div element
     console.log(weekDiv);

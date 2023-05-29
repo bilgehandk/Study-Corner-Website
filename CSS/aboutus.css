@@ -15,12 +15,12 @@
     margin-top: 50px;
 }
 header{
-    font-size: 15px;
-    font-family: 'Foldit', cursive;
-    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
     color: white;
     margin: auto 50px;
     padding-top: 30px;
+    font-weight: bold;
 }
 #secondheader{
     color:#394867;
@@ -36,7 +36,8 @@ img{
     
     border:solid whitesmoke ;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #secondcontainer{
     width: 400px;

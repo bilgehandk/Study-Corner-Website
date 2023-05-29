@@ -7,6 +7,7 @@
 .container {
 	max-width: 800px;
 	margin: 50px auto;
+	color: white;
 }
 
 .header {
@@ -14,6 +15,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
+	color: white;
 }
 
 input[type="text"] {
@@ -57,3 +59,17 @@ li {
 	justify-content: space-between;
 	align-items: center;
 }
+body {
+    
+    background-image: url("../images/backgroundimage.png");
+    background-position: center;
+    
+  }
+  .deleteBtn {
+	padding: 5px 10px;
+	background-color: #E74C3C;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }

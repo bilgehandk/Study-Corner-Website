@@ -6,6 +6,7 @@ body {
   
   h1 {
     text-align: center;
+    color: white;
   }
   
   .container {
@@ -16,6 +17,7 @@ body {
   label {
     display: block;
     margin-bottom: 10px;
+    color: white;
   }
   
   input[type="number"] {
@@ -47,4 +49,12 @@ body {
   .result {
     margin-top: 20px;
     font-weight: bold;
+  }
+  body {
+    
+    background-image: url("../images/backgroundimage.png");
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-position: center;
+    
   }

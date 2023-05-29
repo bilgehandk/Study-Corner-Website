@@ -19,23 +19,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/aboutus.css">
-
+    
     <script>
         function initMap() {
             // Specify the coordinates for the center of the map
             const mapCenter = { lat: 40.712776, lng: -74.005974 };
-    
+
             // Create a new map instance
             const map = new google.maps.Map(document.getElementById("map"), {
                 center: mapCenter,
                 zoom: 12,
             });
-    
+
             // Add a marker to the map
             const marker = new google.maps.Marker({
                 position: mapCenter,
                 map: map,
                 title: "Our Location",
+            });
+
+            // Add a marker for the specified address
+            const addressMarker = new google.maps.Marker({
+                position: { lat: 40.712776, lng: -74.005974 }, // Specify the coordinates of the address
+                map: map,
+                title: "Address Location",
+            });
+
+            // Add an info window to the address marker
+            const infoWindow = new google.maps.InfoWindow({
+                content: '<h3>Address Title</h3><p>Address description goes here.</p>',
+            });
+            addressMarker.addListener("click", () => {
+                infoWindow.open(map, addressMarker);
             });
         }
     </script>
@@ -75,19 +90,19 @@
             </form>
         </div>
     </nav>
-    <div id="container">
-        <div id="firstcontainer">
+    <div id="container" style="padding-top: 75px;">
+        <div id="firstcontainer" style="text-align: center;">
             <header>Emirhan Kaya</header>
             <img src="images/emirhankaya.png">
             
         </div>
-        <div id="secondcontainer">
+        <div id="secondcontainer" style="text-align: center;">
             <header id="secondheader">Simay Ardıç</header>
-            <img src="images/emirhankaya.png">
+            <img src="images/simayardic.png">
         </div>
-        <div id="thirdcontainer">
+        <div id="thirdcontainer" style="text-align: center;">
             <header>Bilgehan Demirkaya</header>
-            <img src="images/emirhankaya.png" >
+            <img src="images/bilgehandemirkaya.png" >
         </div>
     </div>
 

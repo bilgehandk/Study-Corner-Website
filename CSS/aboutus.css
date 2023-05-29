@@ -19,7 +19,7 @@ header{
     font-family: 'Foldit', cursive;
     font-family: 'Press Start 2P', cursive;
     color: white;
-    margin:auto 50px ;
+    margin: auto 50px;
     padding-top: 30px;
 }
 #secondheader{
@@ -33,10 +33,10 @@ header{
 }
 img{
     width: 150px;
-    margin-top: 35px;
+    
     border:solid whitesmoke ;
     border-radius: 50%;
-    
+    margin-top: 20px;
 }
 #secondcontainer{
     width: 400px;
@@ -86,4 +86,3 @@ img{
 #contact-info p.phone {
     color: #28a745;
 }
-

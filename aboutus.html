@@ -17,40 +17,8 @@
  
     <link rel="stylesheet" href="./CSS/aboutus.css">
     
-    <script>
-        function initMap() {
-            // Specify the coordinates for the center of the map
-            const mapCenter = { lat: 40.712776, lng: -74.005974 };
-
-            // Create a new map instance
-            const map = new google.maps.Map(document.getElementById("map"), {
-                center: mapCenter,
-                zoom: 12,
-            });
-
-            // Add a marker to the map
-            const marker = new google.maps.Marker({
-                position: mapCenter,
-                map: map,
-                title: "Our Location",
-            });
-
-            // Add a marker for the specified address
-            const addressMarker = new google.maps.Marker({
-                position: { lat: 40.712776, lng: -74.005974 }, // Specify the coordinates of the address
-                map: map,
-                title: "Address Location",
-            });
-
-            // Add an info window to the address marker
-            const infoWindow = new google.maps.InfoWindow({
-                content: '<h3>Address Title</h3><p>Address description goes here.</p>',
-            });
-            addressMarker.addListener("click", () => {
-                infoWindow.open(map, addressMarker);
-            });
-        }
-    </script>
+  
+        
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     
 </head>
@@ -121,7 +89,7 @@
 
     <div id="contact-section">
         <h2>Contact Us</h2>
-        <div id="map"></div>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12248.52706542444!2d32.7645067!3d39.8712863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d346fde5dd2cdb%3A0x9d2a118fc1f84c3d!2sBilkent%20%C3%9Cniversitesi%20Bili%C5%9Fim%20Sistemleri%20ve%20Teknolojileri!5e0!3m2!1str!2str!4v1685447250673!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div id="contact-info">
             <h3>Address:</h3>
             <p>Bilkent University C Building, Ankara, Turkey</p>

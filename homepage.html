@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="CSS/homepage.css">
-
+    <link rel="stylesheet" href="CSS/homepage1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <title>Study Corner HomePage</title>
 </head>
 <body>
@@ -45,69 +47,72 @@
     </div>
   </nav>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-    </ol>
-       <div class="carousel-inner">
-        <div class="carousel-item active">
-            <a href="PomodorPage.html" class="carousel-button"><img class="d-block w-100" src="./images/timer.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Pomodoro Timer</h5>
-                <p>The Pomodoro Technique is a time management method based on 25-minute stretches of focused work broken by five-minute breaks</p>
-              </div>
-            </a>
-        </div>
-        <div class="carousel-item">
-            <a href="weeklyplanner.html" class="carousel-button"><img class="d-block w-100" src="./images/planner.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>To-Do List</h5>
-                <p>A list of tasks that an individual needs to complete or accomplish.</p>
-              </div>
-            </a>
-        </div>
-        <div class="carousel-item">
-            <a href="cgpa.html" class="carousel-button"><img class="d-block w-100" src="./images/cgpa.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Cgpa Calculator</h5>
-                <p>Multiplying the overall grade score by the credit score of each subject by the total credit scores</p>
-              </div>
-            </a>
-        </div>
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
 
-    </a>
-</div>
-
-<div class="container mt-5 fade-in row justify-content-center">
-  <h2 class="center">Study Corner</h2>
-  <p>Study Corner is a website that offers a Pomodoro Timer, To-Do List, Batman Runner game, and CGPA calculator. Boost your productivity, stay organized, take breaks, and track your academic progress all in one place. Join Study Corner today!</p>
-</div>
-
-
-
-
-<footer class="bg-dark text-light">
-  <div class="container py-3">
-    <div class="row">
-      <div class="col-md-6">
-        <p>&copy; 2023 Study Corner. All rights reserved.</p>
+    <div class="carousel-inner">
+      <div class="carousel-item active item">
+        <img src="images/cgpa.jpg" class="d-block w-100 images" alt="Slide 1">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="mt-5 fs-3 text-uppercase">Calculate your GPA!</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Be ready for your future</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href = 'cgpa.html'">GPA Calculator</button>
+        </div>
       </div>
-      <div class="col-md-6 text-md-right">
-        <p>Contact us: info@studycorner.com</p>
+      <div class="carousel-item item">
+        <img src="images/planner.jpg" class="d-block w-100 images" alt="Slide 2">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Plan your days!</p>
+          <p class="display-1 fw-bolder text-capitalize">everything will be easy</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href = 'weeklyplanner.html'">Planner</button>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img src="images/timer.jpg" class="d-block w-100 images" alt="Slide 3">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Time is important</p>
+          <p class="display-1 fw-bolder text-capitalize">Don't waste it</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href = 'PomodorPage.html'">Pomodoro Timer</button>
+        </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</footer>
+
+  <div class="container mt-5">
+    <div class="jumbotron text-center" style="background: linear-gradient(135deg, #C7E4FF, #F0F8FF); padding: 40px; border-radius: 20px; transition: transform 0.3s;">
+      <h2 class="display-4" style="font-family: 'Arial Black', sans-serif; color: #000; text-shadow: 2px 2px #000;">Welcome to Study Corner!</h2>
+      <p class="lead" style="font-family: 'Arial', sans-serif; color: #000;">Study Corner is your ultimate online study companion. With a range of helpful tools and resources, we aim to enhance your productivity, organization, and academic success. Whether you need to manage your time effectively with the Pomodoro Timer, stay on top of your tasks with the Todo List, or calculate your CGPA effortlessly, Study Corner has got you covered.</p>
+      <p class="lead" style="font-family: 'Arial', sans-serif; color: #000;">Our Pomodoro Timer helps you optimize your study sessions by breaking them into focused intervals and rest breaks. Stay motivated and maintain your concentration throughout your study sessions with this proven technique.</p>
+      <p class="lead" style="font-family: 'Arial', sans-serif; color: #000;">The Todo List feature allows you to organize your tasks and prioritize your workload. Keep track of your assignments, projects, and deadlines, ensuring that nothing falls through the cracks.</p>
+      <p class="lead" style="font-family: 'Arial', sans-serif; color: #000;">Calculating your CGPA is made simple with our CGPA Calculator. Just enter your grades and credits, and let Study Corner handle the calculations for you. Stay informed about your academic progress and plan your future semesters effectively.</p>
+      <p class="lead" style="font-family: 'Arial', sans-serif; color: #000;">Study Corner is here to support you on your educational journey. Join us today and make the most out of your study time!</p>
+    </div>
+
+
+    <footer class="text-center" style="color: white;font-weight: bold;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-md-left">
+            <p>&copy; 2023 Study Corner. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <p>Contact us: info@studycorner.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

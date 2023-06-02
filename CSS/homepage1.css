@@ -1,0 +1,40 @@
+
+.item {
+ height: 480px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.images {
+ height: 100%;
+ object-fit: cover;
+ filter: brightness(0.6);
+}
+.jumbotron {
+ background: linear-gradient(135deg, #C7E4FF, #F0F8FF);
+ padding: 40px;
+ border-radius: 20px;
+ transition: transform 0.3s;
+}
+
+.jumbotron:hover {
+ transform: scale(1.05);
+}
+body {
+ background: linear-gradient(-45deg, #94A1EF, #9AB8F7, #A0D5F6, #A6ECFA);
+ background-size: 400% 400%;
+ animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}

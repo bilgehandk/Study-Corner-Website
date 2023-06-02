@@ -23,7 +23,7 @@ function jump() {
 
     setTimeout(function () {
       batman.classList.remove("jump");
-    }, 300);
+    }, 1000);
   }
 }
 

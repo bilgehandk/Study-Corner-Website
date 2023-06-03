@@ -2,42 +2,47 @@ let courseList = [];
 let totalCredits = 0;
 let totalPoints = 0;
 
-function calculateCGPA() {
-  const courseInput = document.getElementById('course');
-  const gradeInput = document.getElementById('grade');
-  const creditInput = document.getElementById('credit');
-  const resultDiv = document.getElementById('result');
-  const courseListDiv = document.getElementById('courseList');
+$(document).ready(function() {
+  $('#calculateBtn').click(function() {
+    calculateCGPA();
+  });
+});
 
-  const courseName = courseInput.value;
-  const grade = gradeInput.value;
-  const credit = parseInt(creditInput.value);
+function calculateCGPA() {
+  const courseInput = $('#course');
+  const gradeInput = $('#grade');
+  const creditInput = $('#credit');
+  const resultDiv = $('#result');
+  const courseListDiv = $('#courseList');
+
+  const courseName = courseInput.val();
+  const grade = gradeInput.val();
+  const credit = parseInt(creditInput.val());
 
   if (courseName.trim() === '') {
-    resultDiv.textContent = 'Please enter a valid course name.';
+    resultDiv.text('Please enter a valid course name.');
     return;
   }
 
   if (isNaN(credit)) {
-    resultDiv.textContent = 'Please select a valid credit hours value.';
+    resultDiv.text('Please select a valid credit hours value.');
     return;
   }
 
   courseList.push({ courseName, grade, credit });
 
-  const courseItem = document.createElement('div');
-  courseItem.innerHTML = `${courseName} - Grade: ${grade} - Credit Hours: ${credit}`;
-  courseListDiv.appendChild(courseItem);
+  const courseItem = $('<div></div>').html(`${courseName} - Grade: ${grade} - Credit Hours: ${credit}`);
+  courseListDiv.append(courseItem);
 
   totalPoints += calculateGradePoints(grade) * credit;
   totalCredits += credit;
 
-  courseInput.value = '';
-  gradeInput.value = 'A+';
-  creditInput.value = '1';
+  courseInput.val('');
+  gradeInput.val('A+');
+  creditInput.val('1');
 
   const cgpa = calculateCGPAValue();
-  resultDiv.textContent = `Your CGPA: ${cgpa.toFixed(2)}`;
+  resultDiv.text(`Your CGPA: ${cgpa.toFixed(2)}`);
 }
 
 function calculateGradePoints(grade) {

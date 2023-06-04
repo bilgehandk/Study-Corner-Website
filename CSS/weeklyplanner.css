@@ -75,8 +75,5 @@ body {
 	cursor: pointer;
   }
 
-  .date-picker-popup  {
-	-fx-border-color: #1783CC;
-	-fx-background-color: white;
-	 }
-  
+
+

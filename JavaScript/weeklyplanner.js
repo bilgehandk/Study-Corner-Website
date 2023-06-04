@@ -51,3 +51,11 @@ updateBtn.addEventListener('click', () => {
 
     mainTable[0].appendChild(weekDiv);
 });
+
+
+$( function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );

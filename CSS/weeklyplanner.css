@@ -62,6 +62,7 @@ li {
 body {
     
     background-image: url("../images/backgroundimage.png");
+	z-index: -1;
     background-position: center;
     
   }
@@ -73,3 +74,9 @@ body {
 	border-radius: 5px;
 	cursor: pointer;
   }
+
+  .date-picker-popup  {
+	-fx-border-color: #1783CC;
+	-fx-background-color: white;
+	 }
+  

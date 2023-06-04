@@ -51,3 +51,22 @@ updateBtn.addEventListener('click', () => {
 
     mainTable[0].appendChild(weekDiv);
 });
+
+
+mobiscroll.setOptions({
+    locale: mobiscroll.localeTr,
+    theme: 'ios',
+    themeVariant: 'light'
+});
+
+$(function () {
+    $('#demo-one-input').mobiscroll().datepicker({
+        controls: ['calendar'],
+        display: 'anchored'
+    });
+
+    $('#demo-init-inline').mobiscroll().datepicker({
+        controls: ['calendar'],
+        display: 'inline'
+    });
+});

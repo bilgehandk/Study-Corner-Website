@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
- 
-    <link rel="stylesheet" href="CSS/homepage.css">
- 
+    <script src="./JavaScript/navbar.js"></script>
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+ <!-- font awesome cdn -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
      <style>
          body {
              background-image: url("../images/backgroundimage.png");
-             background-repeat: repeat-y;
+             
              background-size: 100% 100%;
              background-position: center;
              margin: 0;
@@ -34,35 +36,27 @@
    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(45deg, #AEC6CF, #5D92AB, #1E528E);">
-        <span id="boot-icon" class="bi bi-book" style="font-size: 40px;"></span>
-        <a class="navbar-brand" href="homepage.html">Study <span id="brand">Corner</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="PomodorPage.html">Pomodoro Timer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="weeklyplanner.html">Weekly Planner</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="BatmanJumper.html">Game</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="cgpa.html">CGPA Calculator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-          </ul>
+  <nav class="header-area">
+    <div class="header-container">
+        <div class="site-logo">
+            <a href="homepage.html">Study<span>Corner</span></a>
+            <span class="navbar-toggler-icon" ></span>
         </div>
-      </nav>
+        <div class="mobile-nav">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-nav-menu">
+            <ul class="primary-menu">
+                <li><a href="homepage.html" >Home</a></li>
+                <li><a href="cgpa.html" class="active">GPA Calculator</a></li>
+                <li><a href="PomodorPage.html">Pomodoro Timer</a></li>
+                <li><a href="weeklyplanner.html">Planner</a></li>
+                <li><a href="BatmanJumper.html" >Game</a></li>
+                <li><a href="aboutus.html" >About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
   <h1 style="padding-top: 100px;">CGPA Calculator</h1>
   <div class="container">
     <label for="course">Course:</label>

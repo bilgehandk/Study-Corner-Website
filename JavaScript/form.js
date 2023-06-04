@@ -1,14 +1,14 @@
 $(document).ready(function() {
     $('#contactForm').submit(function(event) {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault(); 
   
       // Get the form data
       var formData = $(this).serialize();
   
-      // Send an AJAX request to handle form submission
+      
       $.ajax({
         type: 'POST',
-        url: 'process_form.php', // Replace with the URL to your server-side script to process the form
+        url: 'process_form.php', 
         data: formData,
         success: function(response) {
           // Display a success message

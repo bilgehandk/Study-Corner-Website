@@ -9,43 +9,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script><!----for form-->
-    <link rel="stylesheet" href="CSS/homepage.css">
+    <!----for form-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   
     <link rel="stylesheet" href="CSS/homepage1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./JavaScript/navbar.js"></script>
+    <link rel="stylesheet" href="./CSS/navbar.css">
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>Study Corner HomePage</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(45deg, #AEC6CF, #5D92AB, #1E528E);">
-    <span id="boot-icon" class="bi bi-book" style="font-size: 40px;"></span>
-    <a class="navbar-brand" href="homepage.html">Study <span id="brand">Corner</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="PomodorPage.html">Pomodoro Timer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="weeklyplanner.html">Weekly Planner</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="BatmanJumper.html">Game</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cgpa.html">CGPA Calculator</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
-      </ul>
+  <nav class="header-area">
+    <div class="header-container">
+        <div class="site-logo">
+            <a href="homepage.html">Study<span>Corner</span></a>
+            <span class="navbar-toggler-icon" ></span>
+        </div>
+        <div class="mobile-nav">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-nav-menu">
+            <ul class="primary-menu">
+                <li><a href="homepage.html" class="active">Home</a></li>
+                <li><a href="cgpa.html">GPA Calculator</a></li>
+                <li><a href="PomodorPage.html">Pomodoro Timer</a></li>
+                <li><a href="weeklyplanner.html">Planner</a></li>
+                <li><a href="BatmanJumper.html">Game</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" >
     <div class="carousel-indicators">

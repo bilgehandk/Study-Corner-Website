@@ -101,7 +101,7 @@ section#hero-section {
 }
 
 /* Responsive css */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     .site-nav-menu {
         float: none;
         position: absolute;
@@ -120,6 +120,7 @@ section#hero-section {
         display: block;
         text-align: center;
         margin: 25px 5px;
+        z-index: 999;
     }
 
     .mobile-nav {

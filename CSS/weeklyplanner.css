@@ -19,14 +19,15 @@
 }
 
 input[type="text"] {
-	padding: 10px;
+	padding: 15px;
 	border: none;
 	border-radius: 5px;
 	margin-right: 10px;
 }
 
 #addBtn, #updateBtn {
-	padding: 10px;
+	padding: 15px;
+	margin-right: 10px;
 	background-color: #394867;
 	color: white;
 	border: none;
@@ -42,6 +43,7 @@ input[type="text"] {
 
 h1, h2 {
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 ul {

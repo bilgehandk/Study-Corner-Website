@@ -54,5 +54,5 @@ updateBtn.addEventListener('click', () => {
 
 
 $(function() {
-    $("#datepicker").datepicker();
+    $("#datePicker").datepicker();
   });

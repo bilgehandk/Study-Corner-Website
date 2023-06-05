@@ -1,7 +1,7 @@
 var count = 1;
 const input = document.getElementById('input');
 const addBtn = document.getElementById('addBtn');
-const datePicker = $('#datePicker');
+const datePicker = $("#datePicker");
 const updateBtn = document.getElementById('updateBtn');
 const weekHeading = document.getElementById('weekHeading');
 const mainTable = document.getElementsByClassName('maintable');
@@ -53,20 +53,6 @@ updateBtn.addEventListener('click', () => {
 });
 
 
-mobiscroll.setOptions({
-    locale: mobiscroll.localeTr,
-    theme: 'ios',
-    themeVariant: 'light'
-});
-
-$(function () {
-    $('#demo-one-input').mobiscroll().datepicker({
-        controls: ['calendar'],
-        display: 'anchored'
-    });
-
-    $('#demo-init-inline').mobiscroll().datepicker({
-        controls: ['calendar'],
-        display: 'inline'
-    });
-});
+$(function() {
+    $("#datepicker").datepicker();
+  });

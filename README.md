@@ -1,14 +1,14 @@
 The porject developed with **Jquey, JavaScript, HTML, CSS, Bootstrap**
-\ **The main Page:**
+<br /> **The main Page:**
 ![Model](./ScreenShoot/homepageSS.png)
-\ **GPA Calculator:** \
+<br /> **GPA Calculator:** \
 ![Model](./ScreenShoot/cgpaSS.png)
-\ **Pomodoro Timer:** \
+<br /> **Pomodoro Timer:** \
 ![Model](./ScreenShoot/pomodoroSS.png)
-\ **Planner:** \
+<br /> **Planner:** \
 ![Model](./ScreenShoot/todoListSS.png)
-\ **Batman Runner Game:** \
+<br /> **Batman Runner Game:** \
 ![Model](./ScreenShoot/gameSS.png)
-\ **About us:** \
+<br /> **About us:** \
 ![Model](./ScreenShoot/aboutSS.png)
 

@@ -1,4 +1,14 @@
-* {
+
+
+  .deleteBtn {
+	background-color: #E74C3C;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -18,17 +28,35 @@
 	color: white;
 }
 
-input[type="text"] {
-	z-index: 1;
-	padding: 15px;
-	border: none;
-	border-radius: 5px;
-	margin-right: 10px;
+.input-group {
+	margin-bottom: 10px;
 }
 
-#addBtn, #updateBtn {
-	padding: 15px;
+.input-group .form-control {
 	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.maintable {
+	padding: 20px;
+	border-radius: 5px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+body {
+	background-image: url("../images/backgroundimage.png");
+	background-position: center;
+}
+
+#addBtn,
+#updateBtn {
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 10px;
 	background-color: #394867;
 	color: white;
 	border: none;
@@ -36,52 +64,48 @@ input[type="text"] {
 	cursor: pointer;
 }
 
-.week {
-	border: 1px solid #ccc;
-	padding: 20px;
-	border-radius: 5px;
+@media (max-width: 767px) {
+	.container {
+		margin: 20px;
+	}
+
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.input-group .form-control {
+		margin-right: 0;
+		margin-bottom: 10px;
+		padding-right: 20px;
+	}
+
+	.maintable {
+		padding: 10px;
+	}
+
+	#addBtn,
+	#updateBtn {
+		width: 90%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.input-group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.input-group .form-control,
+	#addBtn,
+	#updateBtn {
+		flex: 1;
+	}
+
+	#addBtn {
+		margin-right: 0;
+		margin-left: 5px;
+	}
 }
-
-h1, h2 {
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	padding: 10px;
-	
-	border-radius: 5px;
-	margin-bottom: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-body {
-    
-    background-image: url("../images/backgroundimage.png");
-	
-    background-position: center;
-    
-  }
-  .deleteBtn {
-	padding: 5px 10px;
-	background-color: #E74C3C;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-  }
-
-	#datePicker {
-	z-index: 1;
-	background-color: white;
-  }
-  
-
-

@@ -23,8 +23,10 @@ window.onload = () => {
 function editMinutes() {
     if (!isEditable) {
         isEditable = true;
+       
         let minutesElement = document.getElementById('minutes');
         minutesElement.innerHTML = "<input type='number' id='editableMinutes' min='1' value='" + workTime + "' onchange='setMinutes()'>";
+        document.getElementById("minutes-input").focus();
     }
 }
 

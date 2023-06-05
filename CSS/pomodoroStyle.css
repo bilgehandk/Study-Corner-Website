@@ -170,3 +170,35 @@ section{
     font-size: 25px;
     font-weight: bold;
 }
+
+#minutes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #minutes-input {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    #minutes-input {
+      width: 30px;
+    }
+  }
+
+  #editableMinutes {
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    #editableMinutes {
+      width: 100px;
+    }
+  }
+    

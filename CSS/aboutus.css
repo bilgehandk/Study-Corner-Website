@@ -148,3 +148,7 @@
       margin-bottom: 30px;
     }
 }
+body {
+  background: linear-gradient(to right, #AFD3E2, #19A7CE, #AFD3E2); /* Gradient renkleri */
+  animation: gradientAnimation 10s ease infinite; /* Hareket animasyonu */
+}

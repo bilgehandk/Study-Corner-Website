@@ -117,7 +117,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 56.25%; 
+    padding-top: 10%; 
   }
   
   #map iframe {
